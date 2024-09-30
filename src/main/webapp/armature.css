@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body
+{
+	background:url("https://gamelegends.it/wp-content/uploads/2021/04/Elden-Ring-data.jpg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permette di andare a capo quando necessario */
+    padding: 40px;
+    gap: 20px; /* Aggiunge uno spazio tra le schede */
+}
+.armature-container 
+{
+    display: inline-block;
+    left: auto;
+    margin: 10px;
+    text-align: center;
+    height: 300px;
+    width: 20%;
+
+}
+
+h1
+{
+	color:white;
+	text-align:center;
+}
+
+.immagine 
+{
+    height: 80%;
+}
+
+.text
+{
+    height: 20%;
+}
+
+h2 
+{
+    font-size: 40px;
+    color: rgb(148, 38, 4);
+    background-color: #d2ab00;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*{
+font-size: 20px;
+color: #000000;
+
+}*/
+
+
+.armature-container:hover 
+{
+    transform: scale(1.1); /* Ingrandisce la scheda al passaggio del mouse */
+}
+
+
+.armature-container img 
+{
+    max-width: 60%;
+    height: 100%;
+
+}
+
+.armature-container h2
+{
+    color: whitesmoke;
+}
+
+.armature-container a
+{
+    margin: 0;
+    padding: 5px 0;
+    color: #d2ab00;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.link-url 
+{
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ .link-url:hover
+  {
+    color: #D6B437;
+ }
+ a:hover
+  {
+   text-decoration: underline; /* Aggiunge sottolineatura quando si passa sopra il link */
+ }
+ 
+ h1
+ {
+ 	color:white;
+ 	text-align:center;
+ }

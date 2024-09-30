@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://preview.redd.it/need-help-with-getting-to-the-nw-part-of-the-map-v0-a2behah8da8d1.png?width=1252&format=png&auto=webp&s=ba52aba8bacfd769d742b5472759fb8220039121");
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+h1 {
+    text-align: center; 
+    color: rgb(255, 255, 255);  
+}
+
+.intro {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.schede {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    margin-top: 6%;
+}
+
+.schede > a {
+    text-decoration: none; /* Rimuovi la sottolineatura dai link */
+}
+
+.schede > a > div 
+{
+	display: flex;
+	flex-direction: column; /* Disposizione verticale */
+	align-items: center; /* Centra immagine e testo */
+	width: 200px; /* Larghezza della scheda */
+	padding: 10px;
+	background-color: #000000;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.schede > a > div:hover {
+    transform: scale(1.05); /* Effetto ingrandimento al passaggio del mouse */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Ombra durante l'hover */
+}
+
+.schede img {
+    width: 200px;
+    height: 200px;
+}
+
+.nemici img {
+    background-image: url("https://cdn.mmogah.com/images/2024-08-13-10/elden-ring-items.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.armi img {
+    background-image: url("https://preview.redd.it/zq8rtzoof6z81.png?auto=webp&s=e8ef6ab65cb1fc3298489efe30895ba52ba5f81a");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.armature img {
+    background-image: url("https://p325k7wa.twic.pics/high/elden-ring/elden-ring/05-characters/elden-ring-character-samourai-full.png?twic=v1/resize=370/step=10/quality=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.schede p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.menu {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+}
+
+.calcolatore {
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
+.calcolatore a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.calcolatore a:hover {
+    color: #ffcc00; /* Cambia colore al passaggio del mouse */
+}

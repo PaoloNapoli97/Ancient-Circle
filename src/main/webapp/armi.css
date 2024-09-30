@@ -1,0 +1,57 @@
+@charset "UTF-8";
+body
+{
+background-image:url("https://images6.alphacoders.com/131/1311862.jpeg") ;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.container{
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permette di andare a capo quando necessario */
+    padding: 40px;
+    gap: 20px; /* Aggiunge uno spazio tra le schede */
+}
+.armi-container {
+    display: inline-block;
+    left: auto;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Aggiunta per l'effetto di ingrandimento */
+    
+} 
+
+.armi-container:hover {
+    transform: scale(1.1); /* Ingrandisce la scheda al passaggio del mouse */
+}
+
+a:hover {
+    text-decoration: none; /* Aggiunge sottolineatura quando si passa sopra il link */
+}
+
+.armi-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.armi-container p{
+    margin: 0;
+    padding: 5px 0;
+    
+}
+
+.link-url {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .link-url:hover {
+    color: #D6B437;
+ }
+ h1
+ {
+ 	color:white;
+ 	text-align:center;
+ }
+

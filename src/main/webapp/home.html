@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href=home.css>
+</head>
+<body>
+		<div class="titolo">
+			<img src="Immagini/ANCIENTCIRCLE.png" alt="Titolo" >
+		<div class="bottoni">
+		
+	        <div id="bottonesinistro">
+	            <input type="button" value="REGISTRATI" onclick="attivaReg()">
+	        </div>
+	        
+	    	<div id="bottonedestro">
+	            <input type="button" value="ACCEDI" onclick="attivaAcc()">
+	            
+	    	</div>
+	    </div>
+	    <hr>
+	</div>
+		
+		<div class="body">
+			<p>
+				Se hai già solcato le Lands Between, sai che Elden Ring non perdona. Questo non è un gioco per i deboli di cuore: 
+				tra boss imponenti, dungeon nascosti e intricati sistemi di build, c'è sempre una nuova sfida. 
+				In questa guida per giocatori esperti, ci concentreremo su strategie avanzate, ottimizzazione delle build e i 
+				segreti più profondi del mondo che forse ti sono sfuggiti.
+			</p>
+		
+				<!-- FORM PER LA REGISTRAZIONE UTENTE -->
+				<div id=form-reg>
+					<form action="newuser" method="get" onsubmit="return prosegui()">
+						<table>
+						  <tr>
+						  	<td>
+						  		<input type="button" value="x" class="chiudi" onclick="chiudiForm()">
+						  	</td>
+						  </tr>
+					      <tr>
+					          <td>
+					          	USERNAME
+					         </td>
+					          <td>
+					          	<input type="text" id="username" name="user">
+					       	  </td>
+					      </tr>
+					      <tr>
+					      	<td>
+					        	CONFERMA USERNAME
+					        </td>
+					         <td>
+					         	<input type="text" id="confusername" name="confusername">
+					                </td>
+					            </tr>
+					            <tr>
+					                <td>
+					                	PASSWORD</td>
+					                <td>
+					                    <input type="password" id="password" name="password">
+					                </td>
+					            </tr>
+					            <tr>
+					                <td>
+					                	CONFERMA PASSWORD
+					                </td>
+					                <td>
+					                    <input type="password" id="confpassword" name="confpassword">
+					                </td>
+					            </tr>
+					            <tr>
+					                <td>
+					                    <input type="submit" value="REGISTRATI">
+					                </td>
+					            </tr>
+					        </table>
+					    </form>
+					</div>
+				
+			<!-- FORM ACCESSO UTENTE -->
+				<div id=form-acc>
+					<form action="login" method="post">
+						<table>
+							<tr>
+							  	<td>
+							  		<input type="button" value="x" class="chiudi" onclick="chiudiForm()">
+							  	</td>
+						  </tr>
+							<tr>
+								<td>
+									USERNAME
+								</td>
+								<td>
+									<input type="text" name="user">
+								</td>
+							</tr>
+								<tr>
+								<td>
+									PASSWORD
+								</td>
+								<td>
+									<input type="password" name="password">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									 <input type="submit" value="ACCEDI">
+								</td>
+							</tr>
+						</table>
+					</form>	
+				</div>
+		</div>
+		<div class="foto">
+    		<img src="Immagini/immagine-intro.jpg" alt="malenia" class="immagine">
+		</div>
+		<div class="text">
+			<h3>BUILD AVANZATE E STRATEGIE PER VETERANI</h3>
+			<p>
+				Se hai già esplorato le Lands Between, è il momento di affinare ulteriormente il tuo stile di gioco.
+			 	In questa sezione ci concentreremo sulle build ottimizzate per sfruttare al massimo le meccaniche avanzate di Elden Ring. 
+			 	Analizzeremo armi, incantesimi e combinazioni di equipaggiamenti che ti permetteranno di dominare anche i boss più impegnativi,
+			 	esplorando inoltre strategie specifiche per i contenuti endgame e i segreti nascosti che sfidano persino i giocatori più esperti.
+			</p>
+		</div>
+		
+		<div id=bottone-grande>
+		 	<input type="button" value="COSA ASPETTI? ENTRA NEL NOSTRO MONDO" onclick="attivaReg()">
+		</div>
+		
+		<div class="fotofinale">
+				<img src="Immagini/bandai.png">
+			</div>
+	
+
+</body>
+<script src="home.js"></script>
+</html>

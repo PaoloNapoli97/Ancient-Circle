@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    vertical-align: line-height;
+    font-family: Arial, sans-serif;
+    background-image: url("https://wallpaperbat.com/img/762872-my-collection-of-3840x2160-elden-ring-fromsoftware-related-desktop-background-r-eldenring.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 110px;
+    padding: 6px;
+    border: solid black 2px;
+    border-radius: 5px;
+
+}
+
+a {
+    font-size: 20px;
+    font-weight: bold;
+    color: gold;
+    text-decoration: none;
+    align-items: center;
+    padding: 6px;
+    border: solid black 2px;
+    border-radius: 5px;
+    text-align: center; /* orizzontale */
+    line-height: 110px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

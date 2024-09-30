@@ -1,0 +1,143 @@
+/* General styling for #armi, #armature, and #nemici */
+#armi, #armature, #nemici {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    width: 400px;
+    border: 2px solid #d6b437; /* Gold border to match the button hover */
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    color: white; /* White text for readability */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    font-family: Arial, sans-serif;
+}
+
+/* Background image styling for the body */
+body {
+    background-image: url("https://www.gamesource.it/wp-content/uploads/2021/06/eldenring-8-scaled.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Button styling */
+.btn {
+    cursor: pointer;
+    border: solid rgb(0, 0, 0);
+    font-family: "system-ui";
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    transition: 0.5s; /* Faster transition */
+    width: auto;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px; /* Soft shadow */
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(0, 255, 242, 0) 0%, rgba(19, 45, 212, 0) 100%);
+    --hover-bgc: #d6b437;
+    --hover-borderc: #000000;
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(214, 180, 55); /* Gold background on hover */
+    border-color: rgb(0, 0, 0);
+    border-width: 1.6px;
+    border-style: solid;
+}
+
+/* Link styling */
+.link-url {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-url:hover {
+    color: #D6B437;
+}
+
+/* Logout button positioning and color */
+#logout {
+    margin-left: 90%;
+    color: white;
+}
+
+/* Form inputs inside modals */
+#armi input[type="text"], #armature input[type="text"], #nemici input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #333; /* Dark input background */
+    color: white; /* White text for inputs */
+}
+
+#armi select, #armature select, #nemici select {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Button styling for modals */
+#armi input[type="submit"], #armature input[type="submit"], #nemici input[type="submit"],
+#armi input[type="button"], #armature input[type="button"], #nemici input[type="button"] {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+#armi input[type="submit"]:hover, #armature input[type="submit"]:hover, #nemici input[type="submit"]:hover,
+#armi input[type="button"]:hover, #armature input[type="button"]:hover, #nemici input[type="button"]:hover {
+    background-color: #d6b437; /* Gold hover color for consistency */
+}
+
+input.chiudi 
+{
+    background-color: #b52b1d; /* Colore di sfondo rosso scuro */
+    color: #f0f0f0; /* Testo chiaro */
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input.chiudi:hover 
+{
+    background-color: #d04f4f; /* Colore piÃ¹ chiaro al passaggio del mouse */
+}
+.link
+{
+	padding:20px;
+	
+}
+.link a
+{
+	
+	margin:10%;
+}
+
+a
+{
+	color: white;
+	font-weight:bold;
+	
+}
+a:hover
+{
+	 color: #D6B437;
+}

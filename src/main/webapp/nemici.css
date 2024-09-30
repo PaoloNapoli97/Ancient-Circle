@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("https://dotesports.com/wp-content/uploads/2024/03/ER-Marika-e1710442874738.png?w=1200");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permette di andare a capo quando necessario */
+    padding: 40px;
+    gap: 20px; /* Aggiunge uno spazio tra le schede */
+}
+
+.nemico-container {
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 200px; /* Imposta una larghezza fissa */
+    background-color: black;
+    border-radius: 3px;
+    transition: transform 0.3s ease; /* Aggiunta per l'effetto di ingrandimento */
+}
+
+.nemico-container:hover {
+    transform: scale(1.1); /* Ingrandisce la scheda al passaggio del mouse */
+}
+
+.nemico-container img {
+    width: 150px;  /* Imposta una larghezza fissa */
+    height: 150px; /* Imposta un'altezza fissa */
+    object-fit: contain; 
+    border-bottom: 2px solid black;
+}
+
+.nemico-container p {
+    margin: 0;
+    padding: 5px 0;
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Aggiunge sottolineatura quando si passa sopra il link */
+    color: white;
+}
+
+.link-url {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-url:hover {
+    color: #D6B437;
+}
+
+.titolo {
+    text-align: center; 
+    color: white;
+}

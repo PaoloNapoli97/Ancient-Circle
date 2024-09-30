@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+	<div id="logout" class="logout">
+        <a type="button" href="logout">LOGOUT</a>
+    </div>
+    
+    <div style="text-align: center;">
+	        <h1 style="color: white;">PERSONALIZZAZIONE</h1>
+	        <p style="color: white;">Benvenuti cari admin, questa e' una pagina riservata a voi.
+	                                       Qui potrete inserire nuovi contenuti in gioco, a vostro totale piacimento,
+	                                       potendo scegliere tra ARMI, ARMATURE, NEMICI.</p>
+	                                       
+	       
+		        <input type="button" class="btn" value="ARMI" onclick="attivArmi()">
+		        <input type="button" class="btn" value="ARMATURA" onclick="attivArmatura()">
+		        <input type="button" class="btn" value="NEMICI" onclick="attivNemici()">
+		        <br>
+		
+	        
+	        <p style="color: white;">Cliccando il seguente pulsante invece e' possibile effettuare una nuova registrazione.</p>
+	        <a class="link-url" href="nuovoadmin">INSERISCI UN NUOVO ADMIN</a>
+
+			<p style="color: white;">Cliccando uno di questi link e' possibile effettuare una modifica ai contenuti gioco gia' esistenti</p>
+		<div class="link">
+			<a class="link-url=" href="armiAdmin">MODIFICA ARMA</a>
+			<a class="link-url=" href="armatureAdmin">MODIFICA ARMATURA</a>
+			<a class="link-url=" href="nemiciadmin">MODIFICA NEMICO</a>
+		</div>
+    </div>
+    <div id="armi">
+        <form method="get" action="nuovoarma">
+	        <table>
+	        <tr>
+				<td>
+					<input type="button" value="x" class="chiudi" onclick="chiudiForm()">
+				</td>
+			</tr>
+	            <tr>
+	                <td>
+	                	Nome Arma
+	                </td>
+	                <td>
+	                	<input type="text" name="nome" placeholder="Inserisci il nome di un'arma">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Danno inflitto
+	                </td>
+	                <td>
+	                	<input type="text" name="danno" placeholder="5">
+	                </td>
+	            </tr>
+	            
+	            <tr>
+	                <td>Descrizione</td>
+	                <td><input type="text" name="descrizione" id="descrizione"></td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Tipologia danno inflitto
+	                </td>
+	                <td>
+	                	<select name="tipoDanno">
+	                		<option value = "" disabled selected hidden>scegli il tipo di danno</option>
+		                    <option value="volante">VOLANTE</option>
+		                    <option value="gelo">GELO</option>
+		                    <option value="fuoco">FUOCO</option>
+		                    <option value="magia">MAGIA</option>
+		                    <option value="fisico">FISICO</option>
+		                    <option value="sanguinamento">SANGUINAMENTO</option>
+	               	 </select>
+	               </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Immagine
+	                </td>
+	                <td>
+	                	<input type="text" name="immagini" id="immagine">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	<input type="submit" value="SALVA" onclick="salvaArma(nome.value,tipoDanno.value,descrizione.value,danno.value,immagine.value);">
+	                </td>
+	                <td>
+	                	<input type="button" onclick="pulisciform1()" value="PULISCI">
+	                </td>
+	            </tr>
+	        </table>
+        </form>
+    </div>
+    <div id="armature">
+        <form method="get" action="nuovoarmatura">
+	        <table>
+	        <tr>
+				<td>
+					<input type="button" value="x" class="chiudi" onclick="chiudiForm()">
+				</td>
+			</tr>
+	            <tr>
+	                <td>
+	                	Nome Armatura
+	                </td>
+	                <td>
+	                	<input type="text" name="nome" placeholder="Corazza del soldato">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Tipologia di difesa
+	                </td>
+	                <td>
+		                <select name="difesa">
+			                	<option value = "" disabled selected hidden>scegli il tipo di difesa</option>
+			                    <option value="volante">VOLANTE</option>
+			                    <option value="gelo">GELO</option>
+			                    <option value="fuoco">FUOCO</option>
+			                    <option value="magia">MAGIA</option>
+			                    <option value="fisico">FISICO</option>
+			                    <option value="sanguinamento">SANGUINAMENTO</option>
+		                </select>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Descrizione
+	                </td>
+	                <td>
+	                	<input type="text" name="descrizione" placeholder="Descrizione">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Riduzione del danno
+	                </td>
+	                <td>
+	                	<input type="number" name="dmgReduction" placeholder="10">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Immagine
+	                </td>
+	                <td>
+	                	<input type="text" name="immagini" id="immagine">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	<input type="submit" value="SALVA" onclick="salvaArmatura(nome.value,difesa.value,descrizione.value,dmgReduction.value);">
+	                </td>
+	                <td>
+	                	<input type="button" onclick="pulisci()" value="PULISCI">
+	                </td>
+	            </tr>
+	        </table>
+        </form>
+    </div>
+    
+    <div id="nemici">
+        <form method="get" action="nuovonemico">
+	        <table>
+	        <tr>
+				<td>
+					<input type="button" value="x" class="chiudi" onclick="chiudiForm()">
+				</td>
+			</tr>
+	            <tr>
+	                <td>
+	                	Nome nemico
+	                </td>
+	                <td>
+	                	<input type="text" name="nome" placeholder="Scheletro">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Vita nemico
+	                </td>
+	                <td>
+	                	<input type="number" name="hp" placeholder="50">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Attacco
+	                </td>
+	                <td>
+	                	<input type="number" name="attacco" placeholder="20">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Difesa
+	                </td>
+	                <td>
+	                	<input type="number" name="difesa" placeholder="25">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Tipologia nemico
+	                </td>
+	                <td>
+		                <select name="tipologia">
+		                <option value = "" disabled selected hidden>scegli il tipo di nemico</option>
+		                    <option value="volante">VOLANTE</option>
+		                    <option value="gelo">GELO</option>
+		                    <option value="fuoco">FUOCO</option>
+		                    <option value="magia">MAGIA</option>
+		                    <option value="fisico">FISICO</option>
+		                    <option value="sanguinamento">SANGUINAMENTO</option>
+	                </select>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Specie nemico
+	                </td>
+	                <td>
+	                	<input type="text" name="specie" placeholder="non-morti">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Descrizione
+	                </td>
+	                <td>
+	                	<input type="text" name="descrizione">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Boss
+	                </td>
+	                <td>
+	                   <select name="isBoss" id="isBoss">
+	                        <option value="1">SI</option>
+	                        <option value="0">NO</option>
+	                   </select>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	Immagine
+	                </td>
+	                <td>
+	                	<input type="text" name="immagini" id="immagine">
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                	<input type="submit" value="SALVA" onclick="salvaNemico(nome.value,hp.value,attacco.value,tipologia.value,specie.value,descrizione.value,idArmaideale.value,isBoss.value,immagini.value);">
+	                </td>
+	                <td>
+	                	<input type="button" onclick="pulisci()" value="PULISCI">
+	               </td>
+	            </tr>
+	        </table>
+        </form>
+    </div>
+</body>
+<script src="admin.js"></script>

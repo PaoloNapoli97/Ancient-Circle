@@ -1,0 +1,79 @@
+body{
+    background-image: url("https://wallpapercat.com/w/full/b/6/3/12235-2908x1636-desktop-hd-elden-ring-background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a,p,th
+{
+    color: white; 
+}
+
+.link-url
+ {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .link-url:hover 
+ {
+    color: #D6B437;
+ }
+
+div
+{
+    text-align: center;
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1
+{
+text-align: center; 
+color: white;
+}
+
+#armi, #armature, #nemici {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    width: 400px;
+    border: 2px solid #d6b437; /* Gold border to match the button hover */
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    color: white; /* White text for readability */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    font-family: Arial, sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+    border: solid rgb(0, 0, 0);
+    font-family: "system-ui";
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    transition: 0.5s; /* Faster transition */
+    width: auto;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px; /* Soft shadow */
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(0, 255, 242, 0) 0%, rgba(19, 45, 212, 0) 100%);
+    --hover-bgc: #3771d6;
+    --hover-borderc: #000000;
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background: #3771d6; /* Gold background on hover */
+    border-color: rgb(0, 0, 0);
+    border-width: 1.6px;
+    border-style: solid;
+}

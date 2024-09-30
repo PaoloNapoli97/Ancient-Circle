@@ -1,0 +1,302 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url(https://store-images.s-microsoft.com/image/apps.47970.13995152356447586.3e46d8cd-8538-4377-826c-ab6ef69216af.d801f513-f201-45c6-9545-15769c8efbb1?mode=scale&q=90&h=720&w=1280&background=%23FFFFFF);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ARMI E ARMATURE CONSIGLIATI */
+.recommendedContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 86%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6) ;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+}
+
+.recommendedEquipContainer{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* CONTAINER SINGOLO EQUIPAGGIAMENTO */
+.equipContainer{
+    background-color: rgba(0, 0, 0, 0.5) ;
+    padding: 4px;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+    display: flex;
+    border: 2px solid white;
+    font-size: 20px;
+    color: lightgray;
+}
+
+.recommendedContainer p{
+    font-size: 24px;
+    text-align: center;
+}
+
+.box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.box .over{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.box a{
+    background-color: rgba(0, 0, 0, 0.5) ;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid lightgray;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.box a:hover{
+    color: black;
+    background-color: lightgray;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.boxArma img{
+
+    background-color: black;
+    border: solid 1px gray;
+    height: 100%;
+    width: 120px;
+}
+
+.boxArmatura img{
+
+    background-color: black;
+    border: solid 1px gray;
+    height: 100%;
+}
+
+/* CONTAINER PAGINA CALCOLATORE */
+.pageContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 86%;
+    /* height: 70%; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6) ;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(6px);
+}
+
+/* CONTAINER CALCOLATORE */
+.calculatorContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.imgGiocatore{
+    text-align: center;
+    border: 2px solid rgb(136, 75, 21);
+    width: 20%;
+    height: 400px;
+    background-color: rgba(88, 73, 3, 0.1);
+}
+
+.imgGiocatore img{
+    height: 100%;
+}
+
+.statGiocatore{
+    width: 20%;
+}
+
+.statGiocatore h3{
+    text-align: center;
+    margin-top: 0;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.contenitoreStat{
+    padding: 10px;
+    border: 2px solid rgb(136, 75, 21);
+    background-color: rgba(88, 73, 3, 0.1);
+    border-radius: 6px;
+    height: 50%;
+}
+
+.inputGiocatore{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.inputGiocatore input{
+    all: unset;
+    width: 50%;
+    border: 1px lightgray solid;
+    text-align: center;
+}
+
+.selectStyle{
+    /* all: unset; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    font-size: 18px;
+    padding: 6px 0;
+    margin: 4px 0;
+    font-weight: bold;
+    width: 100%;
+    border: 1px lightgray solid;
+    text-align: center;
+}
+
+.statNemico{
+    width: 20%;
+}
+
+.statNemico h3{
+    text-align: center;
+    margin-top: 0;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.imgNemico{
+    background-color: rgba(88, 73, 3, 0.1);
+    text-align: center;
+    border: 2px solid rgb(136, 75, 21);
+    width: 25%;
+    height: 300px;
+}
+
+.boxStatnemico{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.imgNemico img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CONTAINER CALCOLO FINALE */
+.containerCalcolo{
+    /* display: flex;
+    justify-content: center; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 40%;
+}
+
+.grid{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    padding: 10px 24px;
+    align-items: baseline;
+    font-weight: bold;
+    margin: 4px 0;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.grid::after{
+    content: "";
+    background: white;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+}
+
+.grid input{
+    padding: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    color: white;
+    border: 1px lightgray solid;
+    border-radius: 4px;
+}
+
+.grid input:hover{
+    color: black;
+    background-color: rgb(136, 75, 21);
+    transform: scale(1.05);
+    transition: 0.3s;
+    border-color: black;
+}
+
+.dannoRicevto{
+    padding: 20px 24px;
+}
+
+.dannoRicevto div{
+    width: 50%;
+    text-align: right;
+}
+
+.dannoInflitto{
+    padding: 20px 24px;
+}
+
+.dannoInflitto div{
+    width: 50%;
+    text-align: right;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 20px;
+}
+
+.nav a{
+    color: white;
+}
+
+.nav h1{
+    color: goldenrod;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}

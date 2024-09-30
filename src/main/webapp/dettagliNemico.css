@@ -1,0 +1,84 @@
+
+body{
+    background-image: url("https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/06/elden-ring-radahn.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+p,th{
+    color: #ffffff;
+    font-weight:bold;
+    
+}
+.img-nemico {
+    height: 400px;
+}
+
+.img-nemico img{
+    height: 100%;
+}
+
+
+a {
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+ }
+ a:hover {
+    color: #D6B437;
+    font-weight: bold;
+    
+ }
+
+.nemico-container{
+    text-align: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    cursor: pointer;
+    border: solid rgb(0, 0, 0);
+    font-family: "system-ui";
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    transition: 0.5s; /* Faster transition */
+    width: auto;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px; /* Soft shadow */
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(0, 255, 242, 0) 0%, rgba(19, 45, 212, 0) 100%);
+    --hover-bgc:red;
+    --hover-borderc: #000000;
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background: red; /* Gold background on hover */
+    border-color: rgb(0, 0, 0);
+    border-width: 1.6px;
+    border-style: solid;
+}
+
+#armi, #armature, #nemici {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    width: 400px;
+    border: 2px solid #d6b437; /* Gold border to match the button hover */
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    color: white; /* White text for readability */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    font-family: Arial, sans-serif;
+}
